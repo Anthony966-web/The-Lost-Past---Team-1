@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Tilemaps;
@@ -10,6 +11,7 @@ public class Item : ScriptableObject
     public TileBase Tile;
     public ItemType type;
     public ActionType actionType;
+    public ItemTypeClass itemClass;
     public Vector2Int range = new Vector2Int(5, 4);
 
     [Header("UI")]
@@ -17,16 +19,39 @@ public class Item : ScriptableObject
 
     [Header("Both")]
     public Sprite image;
+
+    public void Awake()
+    {
+        if (type == ItemType.Equipable)
+        {
+            stackable = false;
+        }
+        else
+        {
+            itemClass = ItemTypeClass.Item;
+        }
+    }
+
 }
 
 public enum ItemType
 {
-    BuildingBlock,
-    Tool
+    Equipable,
+    Consumable,
+    QuestItem
+}
+
+public enum ItemTypeClass
+{
+    Item,
+    Head,
+    Chest,
+    Legs
 }
 
 public enum ActionType
 {
-    Dig,
-    Mine
+    Equip,
+    Consume,
+    GiveQuestItem
 }
