@@ -4,11 +4,14 @@ using System.Collections.ObjectModel;
 using UnityEngine.InputSystem;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 public class Dialogue : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
     public string[] lines;
     public float textSpeed;
+    public Button Next;
+    public Button Back;
 
     private int index;
 
@@ -22,18 +25,9 @@ public class Dialogue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
-        {
-            if (textComponent.text == lines[index])
-            {
-                NextLine();
-            }
-            else
-            {
-                StopAllCoroutines();
-                textComponent.text = lines[index];
-            }
-        }
+
+        
+
     }
 
     void StartDialogue()
@@ -49,17 +43,42 @@ public class Dialogue : MonoBehaviour
             yield return new WaitForSeconds(textSpeed);
         }
     }
-    void NextLine()
+    public void NextLine(bool next)
     {
-        if (index < lines.Length - 1)
+        StopAllCoroutines();
+        textComponent.text = lines[index];
+        
+        if (next)
         {
-            index++;
-            textComponent.text = string.Empty;
-            StartCoroutine(TypeLine());
+            if (index < lines.Length - 1)
+            {
+                index++;
+                textComponent.text = string.Empty;
+                StartCoroutine(TypeLine());
+            }
+            else
+            {
+                gameObject.SetActive(false);
+            }
         }
         else
         {
-            gameObject.SetActive(false);
+            if (index == lines.Length - 1)
+            {
+                index--;
+                textComponent.text = string.Empty;
+                StartCoroutine(TypeLine());
+            }
         }
+
     }
+    //public void BackLine()
+    //{
+    //    if (index >= lines.Length - 1)
+    //    {
+    //        index--;
+    //        textComponent.text = string.Empty;
+    //        StartCoroutine(TypeLine());
+    //    }
+    //}
 }
