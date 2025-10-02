@@ -1,26 +1,33 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerControllor : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
 
-    public Vector2 _movement;
+    private Vector2 _movement;
     public float movementSpeed;
     public Rigidbody2D rb2D;
+    [HideInInspector] public Vector2 direction;
 
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
+        direction = Vector2.down;
     }
 
     void Update()
     {
-        
+       
     }
 
     public void Move(InputAction.CallbackContext ctx)
     {
         _movement = ctx.ReadValue<Vector2>();
+        
+        if (ctx.ReadValue<Vector2>() != Vector2.zero)
+        { 
+            direction = ctx.ReadValue<Vector2>();
+        }
     }
 
     private void FixedUpdate()
