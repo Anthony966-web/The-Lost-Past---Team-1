@@ -37,6 +37,21 @@ public class EnemyAIScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (path == null)
+            return;
+
+
+            if(curentWaypoint >= path.vectorPath.Count)
+            {
+                reachedEndOfPath = true;
+                return;
+            }
+            else
+            {
+                reachedEndOfPath = false;
+            }
+
+        Vector2 direction = ((Vector2)path.vectorPath[curentWaypoint] - rb.position).normalized;
+        Vector2 force = direction * moveSpeed * Time.deltaTime;
     }
 }
