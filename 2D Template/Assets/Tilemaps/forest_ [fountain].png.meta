@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c64d356ceaedec849814e7928466bd79
+guid: 250c35b8f1107374d9315db891ac334c
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      forest_ [fountain]_0: -2664420685843290555
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
