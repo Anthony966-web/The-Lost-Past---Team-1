@@ -1,23 +1,40 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
 
-    private Vector2 _movement;
+    public Vector2 _movement;
     public float movementSpeed;
     public Rigidbody2D rb2D;
     [HideInInspector] public Vector2 direction;
+    [HideInInspector] public GameObject GFX;
+    [HideInInspector] public Animator anim;
 
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
+        GFX = transform.Find("GFX").transform.gameObject;
+        anim = GFX.GetComponent<Animator>();
         direction = Vector2.down;
     }
 
     void Update()
     {
-       
+        anim.SetFloat("Horizontal", _movement.x);
+        anim.SetFloat("Vertical", _movement.y);
+
+        if (_movement.x < 0)
+        {
+            // Left
+            GFX.GetComponent<SpriteRenderer>().flipX = false;
+        }
+       else if (_movement.x > 0)
+        {
+            // Right
+           GFX.GetComponent<SpriteRenderer>().flipX = true;
+        }
     }
 
     public void Move(InputAction.CallbackContext ctx)
