@@ -5,6 +5,7 @@ using Pathfinding;
 
 public class EnemyGFx : MonoBehaviour
 {
+    internal static Vector3 force;
     public AIPath aiPath;
 
     // Update is called once per frame

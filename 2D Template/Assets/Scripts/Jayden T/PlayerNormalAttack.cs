@@ -1,11 +1,13 @@
 using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections;
+using System.Collections.Generic;
 
 public class PlayerNormalAttack : MonoBehaviour
 {
-    public float attackRange = 1.5f;
-    public LayerMask attackLayer;
+    [SerializeField]public float attackRange = 1.5f;
+    [SerializeField]public LayerMask attackLayer;
 
     private PlayerController topDown;
 
