@@ -6,8 +6,8 @@ using System.Collections.Generic;
 
 public class PlayerNormalAttack : MonoBehaviour
 {
-    [SerializeField]public float attackRange = 1.5f;
-    [SerializeField]public LayerMask attackLayer;
+    [SerializeField] public float attackRange = 1.5f;
+    [SerializeField] public LayerMask attackLayer;
 
     private PlayerController topDown;
 
@@ -21,21 +21,21 @@ public class PlayerNormalAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void Attack(InputAction.CallbackContext ctx)
     {
         RaycastHit2D hit = Physics2D.CircleCast(transform.position + (Vector3)topDown.direction, attackRange, Vector2.zero, 0, attackLayer);
 
-       if (hit)
-            {
-                UnityEngine.Debug.Log(hit.collider.gameObject.name);
-                Destroy(hit.collider.gameObject, 0);
+        if (hit)
+        {
+            UnityEngine.Debug.Log(hit.collider.gameObject.name);
+            Destroy(hit.collider.gameObject, 0);
         }
-        
 
-        
+
+
     }
 
     private void OnDrawGizmos()

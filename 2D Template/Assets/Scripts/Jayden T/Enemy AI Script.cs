@@ -10,6 +10,7 @@ public class EnemyAIScript : MonoBehaviour
 
     public float moveSpeed = 200f;
     public float nextWaypointDistance = 3f;
+    private float distanceToPlayer;
 
     Path path;
     int curentWaypoint = 0;
@@ -46,6 +47,16 @@ public class EnemyAIScript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        distanceToPlayer = Vector2.Distance(rb.position, target.position);
+        if (distanceToPlayer > 4f)
+        { target = this.gameObject.transform;
+            
+        }//GameObject.Find("Player").transform; }
+        else if(distanceToPlayer < 4f)
+        { target = GameObject.Find("Player").transform;
+            
+        }
+
         if (path == null)
             return;
 
