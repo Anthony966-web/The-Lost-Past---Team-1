@@ -473,6 +473,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17fa2353d88ff1f4c94634d2494d8f52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boxSize: {x: 1.5, y: 3}
+  boxLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &510444813
 GameObject:
   m_ObjectHideFlags: 0
@@ -968,7 +972,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &903579191
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1413,7 +1417,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1572258540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1658,6 +1662,7 @@ GameObject:
   - component: {fileID: 1844564303}
   - component: {fileID: 1844564302}
   - component: {fileID: 1844564301}
+  - component: {fileID: 1844564304}
   m_Layer: 6
   m_Name: Isometric Diamond
   m_TagString: Untagged
@@ -1781,6 +1786,45 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1844564304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844564300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ac0621ce78024c458befaee74749d8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 903579192}
+        m_TargetAssemblyTypeName: Dialogue, Assembly-CSharp
+        m_MethodName: OpenDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1844564301}
+        m_TargetAssemblyTypeName: UnityEngine.Collider2D, UnityEngine
+        m_MethodName: set_isTrigger
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &1910591800
 GameObject:
   m_ObjectHideFlags: 0

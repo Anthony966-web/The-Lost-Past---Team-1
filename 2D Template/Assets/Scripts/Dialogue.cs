@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using JetBrains.Annotations;
 public class Dialogue : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
@@ -28,6 +29,10 @@ public class Dialogue : MonoBehaviour
 
         
 
+    }
+    public void OpenDialogue()
+    {
+        gameObject.SetActive(true);
     }
 
     void StartDialogue()
