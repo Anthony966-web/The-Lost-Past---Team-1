@@ -8,35 +8,55 @@ public class PlayerNormalAttack : MonoBehaviour
 {
     [SerializeField] public float attackRange = 1.5f;
     [SerializeField] public LayerMask attackLayer;
+    public Transform GoblinHealth;
+
+    public float damage = 1f;
 
     private PlayerController topDown;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    
     void Start()
     {
         topDown = GetComponent<PlayerController>();
         print(topDown);
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
 
     }
 
+   
+    
+    
+    
     public void Attack(InputAction.CallbackContext ctx)
     {
-        RaycastHit2D hit = Physics2D.CircleCast(transform.position + (Vector3)topDown.direction, attackRange, Vector2.zero, 0, attackLayer);
+        RaycastHit2D Onhit = Physics2D.CircleCast(transform.position + (Vector3)topDown.direction, attackRange, Vector2.zero, 0, attackLayer);
 
-        if (hit)
+        if (Onhit)
         {
-            UnityEngine.Debug.Log(hit.collider.gameObject.name);
-            Destroy(hit.collider.gameObject, 0);
+            if (Onhit.collider != null)
+            {
+                UnityEngine.Debug.Log("Hit " + Onhit.collider.name);
+
+                if (Onhit.collider.gameObject.CompareTag("Goblin_"))
+                {
+                    GoblinHealth = Onhit.collider.transform;
+                    GoblinHealth goblinHealth = GoblinHealth.GetComponent<GoblinHealth>();
+                    
+
+                }
+            }
         }
-
-
+       
 
     }
+
+   
+
+    
 
     private void OnDrawGizmos()
     {
@@ -45,4 +65,6 @@ public class PlayerNormalAttack : MonoBehaviour
             Gizmos.DrawWireSphere(transform.position + (Vector3)topDown.direction, attackRange);
         }
     }
+
+   
 }
