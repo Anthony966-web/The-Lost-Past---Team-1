@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     [HideInInspector] public GameObject GFX;
     [HideInInspector] public Animator anim;
 
+
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();

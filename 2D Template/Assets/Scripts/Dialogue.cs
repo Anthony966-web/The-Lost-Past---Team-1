@@ -6,6 +6,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using JetBrains.Annotations;
+using Unity.Cinemachine;
+
 public class Dialogue : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
@@ -13,7 +15,8 @@ public class Dialogue : MonoBehaviour
     public float textSpeed;
     public Button Next;
     public Button Back;
-
+    private PlayerController canMove;
+    
     private int index;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -21,6 +24,12 @@ public class Dialogue : MonoBehaviour
     {
         textComponent.text = string.Empty;
         StartDialogue();
+    }
+
+    void Awake()
+    {
+        canMove = GameObject.Find("Player").GetComponent<PlayerController>();
+        Rigidbody2D playerRb = canMove.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -33,6 +42,8 @@ public class Dialogue : MonoBehaviour
     public void OpenDialogue()
     {
         gameObject.SetActive(true);
+        canMove.enabled = false;
+        
     }
 
     void StartDialogue()
@@ -64,6 +75,7 @@ public class Dialogue : MonoBehaviour
             else
             {
                 gameObject.SetActive(false);
+                canMove.enabled = true;
             }
         }
         else
