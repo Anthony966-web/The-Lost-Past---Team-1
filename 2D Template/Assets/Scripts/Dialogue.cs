@@ -16,6 +16,8 @@ public class Dialogue : MonoBehaviour
     public Button Next;
     public Button Back;
     private PlayerController canMove;
+    private Rigidbody2D rb;
+    private Animator an;
     
     private int index;
 
@@ -29,7 +31,8 @@ public class Dialogue : MonoBehaviour
     void Awake()
     {
         canMove = GameObject.Find("Player").GetComponent<PlayerController>();
-        Rigidbody2D playerRb = canMove.GetComponent<Rigidbody2D>();
+        rb = GameObject.Find("Player").GetComponent<Rigidbody2D>();
+        an = GameObject.Find("GFX").GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -43,7 +46,8 @@ public class Dialogue : MonoBehaviour
     {
         gameObject.SetActive(true);
         canMove.enabled = false;
-        
+        rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
+        an.enabled = false;
     }
 
     void StartDialogue()
@@ -76,6 +80,8 @@ public class Dialogue : MonoBehaviour
             {
                 gameObject.SetActive(false);
                 canMove.enabled = true;
+                rb.constraints = RigidbodyConstraints2D.None | RigidbodyConstraints2D.FreezeRotation;
+                an.enabled = true;
             }
         }
         else
