@@ -44,6 +44,10 @@ public class Dialogue : MonoBehaviour
     }
     public void OpenDialogue()
     {
+        StopAllCoroutines();
+        index = 0;
+        textComponent.text = lines[index];
+        StartCoroutine(TypeLine());
         gameObject.SetActive(true);
         canMove.enabled = false;
         rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
