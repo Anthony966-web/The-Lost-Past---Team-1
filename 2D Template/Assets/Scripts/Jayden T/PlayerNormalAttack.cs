@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 
 public class PlayerNormalAttack : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class PlayerNormalAttack : MonoBehaviour
     public Transform GoblinHealth;
 
     public float damage = 1f;
+    public GameObject AttackHitbox;
+    Collider2D AttackCollider;
 
     private PlayerController topDown;
 
@@ -19,6 +22,7 @@ public class PlayerNormalAttack : MonoBehaviour
     {
         topDown = GetComponent<PlayerController>();
         print(topDown);
+        AttackCollider = AttackHitbox.GetComponent<Collider2D>();
     }
 
     
@@ -27,10 +31,9 @@ public class PlayerNormalAttack : MonoBehaviour
 
     }
 
-   
-    
-    
-    
+
+
+
     public void Attack(InputAction.CallbackContext ctx)
     {
         RaycastHit2D Onhit = Physics2D.CircleCast(transform.position + (Vector3)topDown.direction, attackRange, Vector2.zero, 0, attackLayer);
@@ -45,18 +48,26 @@ public class PlayerNormalAttack : MonoBehaviour
                 {
                     GoblinHealth = Onhit.collider.transform;
                     GoblinHealth goblinHealth = GoblinHealth.GetComponent<GoblinHealth>();
-                    
+
 
                 }
             }
         }
-       
+        
+        if (ctx.performed)
+        {
+            AttackCollider.enabled = true;
 
+            
+        }
+        else
+        {
+            AttackCollider.enabled = false;
+        }
     }
 
-   
 
-    
+
 
     private void OnDrawGizmos()
     {

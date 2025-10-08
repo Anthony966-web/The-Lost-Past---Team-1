@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class PlayerHealth : MonoBehaviour
+public class GoblinHealth : MonoBehaviour
 {
     public float Health
     {
