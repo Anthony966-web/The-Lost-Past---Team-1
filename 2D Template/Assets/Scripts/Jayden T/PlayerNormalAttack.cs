@@ -34,48 +34,48 @@ public class PlayerNormalAttack : MonoBehaviour
 
 
 
-    public void Attack(InputAction.CallbackContext ctx)
-    {
-        RaycastHit2D Onhit = Physics2D.CircleCast(transform.position + (Vector3)topDown.direction, attackRange, Vector2.zero, 0, attackLayer);
+    //public void Attack(InputAction.CallbackContext ctx)
+    //{
+       // RaycastHit2D Onhit = Physics2D.CircleCast(transform.position + (Vector3)topDown.direction, attackRange, Vector2.zero, 0, attackLayer);
 
-        if (Onhit)
-        {
-            if (Onhit.collider != null)
-            {
-                UnityEngine.Debug.Log("Hit " + Onhit.collider.name);
+       // if (Onhit)
+        //{
+           // if (Onhit.collider != null)
+           // {
+               // UnityEngine.Debug.Log("Hit " + Onhit.collider.name);
 
-                if (Onhit.collider.gameObject.CompareTag("Goblin_"))
-                {
-                    GoblinHealth = Onhit.collider.transform;
-                    GoblinHealth goblinHealth = GoblinHealth.GetComponent<GoblinHealth>();
-
-
-                }
-            }
-        }
-        
-        if (ctx.performed)
-        {
-            AttackCollider.enabled = true;
-
-            
-        }
-        else
-        {
-            AttackCollider.enabled = false;
-        }
-    }
+               // if (Onhit.collider.gameObject.CompareTag("Goblin_"))
+              //  {
+                  //  GoblinHealth = Onhit.collider.transform;
+                  //  GoblinHealth goblinHealth = GoblinHealth.GetComponent<GoblinHealth>();
 
 
+               // }
+           // }
+      //  }
+
+       // if (ctx.performed)
+       // {
+         //   AttackCollider.enabled = true;
 
 
-    private void OnDrawGizmos()
-    {
-        if (topDown != null)
-        {
-            Gizmos.DrawWireSphere(transform.position + (Vector3)topDown.direction, attackRange);
-        }
-    }
+       // }
+       // else
+       // {
+         //   AttackCollider.enabled = false;
+        //}
+   // }
+
+
+
+
+   // private void OnDrawGizmos()
+   // {
+       // if (topDown != null)
+       // {
+         //   Gizmos.DrawWireSphere(transform.position + (Vector3)topDown.direction, attackRange);
+       // }
+   // }
 
    
 }

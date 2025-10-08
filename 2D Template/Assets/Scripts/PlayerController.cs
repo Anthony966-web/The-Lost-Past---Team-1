@@ -30,11 +30,13 @@ public class PlayerController : MonoBehaviour
         {
             // Left
             GFX.GetComponent<SpriteRenderer>().flipX = false;
+            gameObject.BroadcastMessage("isFacingRight", true);
         }
        else if (_movement.x > 0)
         {
             // Right
            GFX.GetComponent<SpriteRenderer>().flipX = true;
+            gameObject.BroadcastMessage("isFacingRight", false); 
         }
     }
 
