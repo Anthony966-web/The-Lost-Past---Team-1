@@ -14,6 +14,11 @@ public class Item : ScriptableObject
     public ItemTypeClass itemClass;
     public Vector2Int range = new Vector2Int(5, 4);
 
+    [Header("Equipment")]
+    public float healthBoost;
+    public float speedBoost;
+
+
     [Header("UI")]
     public bool stackable = true;
 
