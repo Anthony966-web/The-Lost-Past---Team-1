@@ -54,4 +54,12 @@ public class PlayerController : MonoBehaviour
     {
         rb2D.linearVelocity = new Vector2(_movement.x * movementSpeed, _movement.y * movementSpeed);
     }
+
+
+
+    public void isFacingRight(bool isRight)
+    {
+
+        Debug.Log("Player is facing right: " + isRight);
+    }    
 }
