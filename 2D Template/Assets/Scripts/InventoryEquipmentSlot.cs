@@ -7,6 +7,9 @@ public class InventoryEquipmentSlot : MonoBehaviour, IDropHandler
     public Image image;
     public Color selectedColor, notSelectedColor;
 
+    public float healthBoost;
+    public float speedBoost;
+
     public EquipSlotType type;
 
     void Awake()
@@ -54,6 +57,20 @@ public class InventoryEquipmentSlot : MonoBehaviour, IDropHandler
             existingItem.localPosition = Vector3.zero;
 
             droppedItem.parentAfterDrag = transform;
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        UpdateEquipment();
+    }
+
+    public void UpdateEquipment()
+    {
+        if(transform.childCount == 1)
+        {
+            healthBoost = transform.GetChild(0).GetComponent<InventoryItem>().item.healthBoost;
+            speedBoost = transform.GetChild(0).GetComponent<InventoryItem>().item.speedBoost;
         }
     }
 

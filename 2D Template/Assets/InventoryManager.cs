@@ -9,6 +9,7 @@ public class InventoryManager : MonoBehaviour
 
     public int maxStackedItems = 4;
     public InventorySlot[] InventorySlots;
+    public InventoryEquipmentSlot[] EquipSlots;
 
     public GameObject mainInventory;
 
@@ -37,6 +38,20 @@ public class InventoryManager : MonoBehaviour
             if (isNumber && number > 0 && number < 8)
             {
                 ChangeSelectedSlot(number - 1);
+            }
+        }
+
+    }
+
+    private void FixedUpdate()
+    {
+        for(int i = 0; i < EquipSlots.Length; i++)
+        {
+            if (EquipSlots[i].transform != null)
+            {
+                print(EquipSlots[i].speedBoost);
+                print(PlayerController.instance.movementSpeed);
+                PlayerController.instance.movementSpeed = EquipSlots[i].speedBoost;
             }
         }
     }
