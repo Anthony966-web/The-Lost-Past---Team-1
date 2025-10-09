@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: a235aa0e523463249898f6a6532ec362
+guid: f1513b9230399dd42bc1ded48fffd954
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7775649970217235406
-    second: Cloth_0
+      213: -6201857198974045655
+    second: Necromancer_0
+  - first:
+      213: 8203306007564158787
+    second: Necromancer_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cloth_0
+      name: Necromancer_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 2
+        y: 31
+        width: 25
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +144,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 23ccc6b9c87571490800000000000000
-      internalID: -7775649970217235406
+      spriteID: 922f3738cb39ee9a0800000000000000
+      internalID: -6201857198974045655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Necromancer_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34780b4d95ff7d170800000000000000
+      internalID: 8203306007564158787
       vertices: []
       indices: 
       edges: []
@@ -161,7 +186,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Cloth_0: -7775649970217235406
+      Necromancer_0: -6201857198974045655
+      Necromancer_1: 8203306007564158787
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
