@@ -30,11 +30,11 @@ public class AttackHitbox : MonoBehaviour
     {
         if (isFacingRight)
         {
-            gameObject.transform.position = faceRight;
+            gameObject.transform.localPosition = faceRight;
         }
         else
         {
-            gameObject.transform.position = faceLeft;
+            gameObject.transform.localPosition = faceLeft;
         }
     }
 }
