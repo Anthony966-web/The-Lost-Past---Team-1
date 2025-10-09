@@ -6,6 +6,7 @@ using Pathfinding;
 public class EnemyAIScript : MonoBehaviour
 {
     public Transform target;
+    public Transform Player;
     public Transform EnemyGFx;
 
     public float moveSpeed = 200f;
@@ -47,12 +48,12 @@ public class EnemyAIScript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        distanceToPlayer = Vector2.Distance(rb.position, target.position);
-        if (distanceToPlayer > 4f)
+        distanceToPlayer = Vector2.Distance(rb.position, Player.position);
+        if (distanceToPlayer > 6f)
         { target = this.gameObject.transform;
             
         }//GameObject.Find("Player").transform; }
-        else if(distanceToPlayer < 4f)
+        else if(distanceToPlayer < 6f)
         { target = GameObject.Find("Player").transform;
             
         }

@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     [HideInInspector] public GameObject GFX;
     [HideInInspector] public Animator anim;
 
+
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
@@ -29,11 +30,13 @@ public class PlayerController : MonoBehaviour
         {
             // Left
             GFX.GetComponent<SpriteRenderer>().flipX = false;
+            gameObject.BroadcastMessage("isFacingRight", true);
         }
        else if (_movement.x > 0)
         {
             // Right
            GFX.GetComponent<SpriteRenderer>().flipX = true;
+            gameObject.BroadcastMessage("isFacingRight", false); 
         }
     }
 
@@ -51,4 +54,12 @@ public class PlayerController : MonoBehaviour
     {
         rb2D.linearVelocity = new Vector2(_movement.x * movementSpeed, _movement.y * movementSpeed);
     }
+
+
+
+    public void isFacingRight(bool isRight)
+    {
+
+        Debug.Log("Player is facing right: " + isRight);
+    }    
 }
