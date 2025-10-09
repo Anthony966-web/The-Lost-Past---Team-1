@@ -30,22 +30,22 @@ public class PlayerController : MonoBehaviour
         {
             // Left
             GFX.GetComponent<SpriteRenderer>().flipX = false;
-            gameObject.BroadcastMessage("isFacingRight", true);
+            
         }
-       else if (_movement.x > 0)
+        else if (_movement.x > 0)
         {
             // Right
-           GFX.GetComponent<SpriteRenderer>().flipX = true;
-            gameObject.BroadcastMessage("isFacingRight", false); 
+            GFX.GetComponent<SpriteRenderer>().flipX = true;
+            
         }
     }
 
     public void Move(InputAction.CallbackContext ctx)
     {
         _movement = ctx.ReadValue<Vector2>();
-        
+
         if (ctx.ReadValue<Vector2>() != Vector2.zero)
-        { 
+        {
             direction = ctx.ReadValue<Vector2>();
         }
     }
@@ -57,9 +57,4 @@ public class PlayerController : MonoBehaviour
 
 
 
-    public void isFacingRight(bool isRight)
-    {
-
-        Debug.Log("Player is facing right: " + isRight);
-    }    
 }
