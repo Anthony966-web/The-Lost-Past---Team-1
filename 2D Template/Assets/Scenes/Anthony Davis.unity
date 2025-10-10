@@ -4931,7 +4931,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _movement: {x: 0, y: 0}
-  movementSpeed: 0
+  speedMultiplier: 0
+  baseMoveSpeed: 5
   rb2D: {fileID: 0}
   direction: {x: 0, y: 0}
   GFX: {fileID: 0}

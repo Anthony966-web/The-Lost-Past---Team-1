@@ -50,8 +50,8 @@ public class InventoryManager : MonoBehaviour
             if (EquipSlots[i].transform != null)
             {
                 print(EquipSlots[i].speedBoost);
-                print(PlayerController.instance.movementSpeed);
-                PlayerController.instance.movementSpeed = EquipSlots[i].speedBoost;
+                print(PlayerController.instance.speedMultiplier);
+                PlayerController.instance.speedMultiplier = EquipSlots[i].speedBoost;
             }
         }
     }

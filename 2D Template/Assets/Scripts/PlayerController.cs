@@ -4,9 +4,13 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController instance;
 
     public Vector2 _movement;
-    public float movementSpeed;
+    private float movementSpeed;
+    public float speedMultiplier;
+    public float baseMoveSpeed;
+
     public Rigidbody2D rb2D;
     [HideInInspector] public Vector2 direction;
     [HideInInspector] public GameObject GFX;
@@ -52,6 +56,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        movementSpeed = baseMoveSpeed + speedMultiplier;
         rb2D.linearVelocity = new Vector2(_movement.x * movementSpeed, _movement.y * movementSpeed);
     }
 
