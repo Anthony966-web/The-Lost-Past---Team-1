@@ -17,6 +17,11 @@ public class PlayerController : MonoBehaviour
     [HideInInspector] public Animator anim;
 
 
+    private void Awake()
+    {
+        instance = this;
+    }
+
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
@@ -30,18 +35,18 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("Horizontal", _movement.x);
         anim.SetFloat("Vertical", _movement.y);
 
-        if (_movement.x < 0)
-        {
-            // Left
-            GFX.GetComponent<SpriteRenderer>().flipX = false;
+        //if (_movement.x < 0)
+        //{
+        //    // Left
+        //    GFX.GetComponent<SpriteRenderer>().flipX = false;
             
-        }
-        else if (_movement.x > 0)
-        {
-            // Right
-            GFX.GetComponent<SpriteRenderer>().flipX = true;
+        //}
+        //else if (_movement.x > 0)
+        //{
+        //    // Right
+        //    GFX.GetComponent<SpriteRenderer>().flipX = true;
             
-        }
+        //}
     }
 
     public void Move(InputAction.CallbackContext ctx)

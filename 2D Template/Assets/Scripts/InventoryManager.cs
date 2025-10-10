@@ -17,6 +17,10 @@ public class InventoryManager : MonoBehaviour
 
     [HideInInspector] public int selectedSlot = -1;
 
+    private float zero = 0;
+    private float one = 0;
+    private float two = 0;
+
     private void Awake()
     {
         instance = this;
@@ -47,14 +51,41 @@ public class InventoryManager : MonoBehaviour
     {
         for(int i = 0; i < EquipSlots.Length; i++)
         {
-            if (EquipSlots[i].transform != null)
+            if (i == 0)
             {
-                print(EquipSlots[i].speedBoost);
-                print(PlayerController.instance.speedMultiplier);
-                PlayerController.instance.speedMultiplier = EquipSlots[i].speedBoost;
+                zero = EquipSlots[0].speedBoost;
             }
+
+            if (i == 1)
+            {
+                one = EquipSlots[1].speedBoost;
+            }
+
+            if (i == 2)
+            {
+                two = EquipSlots[2].speedBoost;
+            }
+
+            if (EquipSlots[i].transform.childCount != 1)
+            {
+                if (i == 0)
+                {
+                    zero = 0;
+                }
+                if (i == 1)
+                {
+                    one = 0;
+                }
+                if (i == 2)
+                {
+                    two = 0;
+                }
+            }
+            
         }
-    }
+
+        PlayerController.instance.speedMultiplier = zero + one + two;
+}
 
     void ChangeSelectedSlot(int newValue)
     {
