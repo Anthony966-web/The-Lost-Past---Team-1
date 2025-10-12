@@ -5,23 +5,21 @@ public class Teleport : MonoBehaviour
 {
     public string SceneName; // Has to be exact
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene(SceneName);
+            TP(SceneName);
         }
+    }
+
+    public void TP(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
+
+    public void CloseGame() // this is here because it was just easier instead of makeing a whole new script just for this
+    {
+        Application.Quit();
     }
 }

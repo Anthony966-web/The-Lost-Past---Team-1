@@ -7,7 +7,7 @@ public class EnemyAIScript : MonoBehaviour
 {
     public Transform target;
     public Transform Player;
-    public Transform EnemyGFx;
+    public Transform EnemyGfx;
 
     public float moveSpeed = 200f;
     public float nextWaypointDistance = 3f;
@@ -25,6 +25,7 @@ public class EnemyAIScript : MonoBehaviour
     {
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
+        EnemyGfx = transform.GetChild(0).transform;
 
         InvokeRepeating("UpdatePath", 0f, .5f);
         seeker.StartPath(rb.position, target.position, OnPathComplete);
@@ -86,11 +87,11 @@ public class EnemyAIScript : MonoBehaviour
 
         if (force.x >= 0.01f)
         {
-            EnemyGFx.localScale = new Vector3(-1f, 1f, 1f);
+            EnemyGfx.localScale = new Vector3(-1f, 1f, 1f);
         }
         else if (force.x <= -0.01f)
         {
-            EnemyGFx.localScale = new Vector3(1f, 1f, 1f);
+            EnemyGfx.localScale = new Vector3(1f, 1f, 1f);
         }
     }
 }
