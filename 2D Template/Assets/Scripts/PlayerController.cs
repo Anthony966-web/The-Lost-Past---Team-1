@@ -45,18 +45,7 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("Horizontal", _movement.x);
         anim.SetFloat("Vertical", _movement.y);
 
-        //if (_movement.x < 0)
-        //{
-        //    // Left
-        //    GFX.GetComponent<SpriteRenderer>().flipX = false;
-
-        //}
-        //else if (_movement.x > 0)
-        //{
-        //    // Right
-        //    GFX.GetComponent<SpriteRenderer>().flipX = true;
-
-        //}
+        
     }
 
     public void Move(InputAction.CallbackContext ctx)
@@ -126,8 +115,6 @@ public class PlayerController : MonoBehaviour
         foreach (Collider2D enemyCol in enemies)
         {
             Debug.Log($"Splash hit: {enemyCol.name}");
-
-           
 
             enemyCol.GetComponent<EnemyHealth>().OnHit(damage);
         }
