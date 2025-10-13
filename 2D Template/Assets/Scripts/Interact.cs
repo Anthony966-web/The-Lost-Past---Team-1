@@ -6,6 +6,7 @@ public class Interact : MonoBehaviour
 {
     public Vector2 boxSize;
     public LayerMask boxLayer;
+    public bool Move = true;
 
     public void InteractWith(InputAction.CallbackContext ctx)
     {
@@ -15,9 +16,10 @@ public class Interact : MonoBehaviour
 
         RaycastHit2D hit = Physics2D.BoxCast(transform.position, boxSize, 0, Vector2.zero, 0, boxLayer);
 
-        if (hit && hit.collider.TryGetComponent(out Interactable interactable))
+        if (hit && hit.collider.TryGetComponent(out Interactable interactable) && Move)
         {
-            interactable.onInteract.Invoke();
+           interactable.onInteract.Invoke();
+            Move = false;
         }
         
     }

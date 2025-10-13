@@ -18,6 +18,7 @@ public class Dialogue : MonoBehaviour
     private PlayerController canMove;
     private Rigidbody2D rb;
     private Animator an;
+    public Interact Move;
     
     private int index;
 
@@ -33,6 +34,7 @@ public class Dialogue : MonoBehaviour
         canMove = GameObject.Find("Player").GetComponent<PlayerController>();
         rb = GameObject.Find("Player").GetComponent<Rigidbody2D>();
         an = GameObject.Find("GFX").GetComponent<Animator>();
+
     }
 
     // Update is called once per frame
@@ -86,6 +88,7 @@ public class Dialogue : MonoBehaviour
                 canMove.enabled = true;
                 rb.constraints = RigidbodyConstraints2D.None | RigidbodyConstraints2D.FreezeRotation;
                 an.enabled = true;
+
             }
         }
         else
