@@ -8,6 +8,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Talon Hobbs.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Tyler Musgrove.unity
+    guid: 606fd6c431e765a4899aa778d661504c
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/Cave.unity
+    guid: 38c1e70d2ee9b4e4caef068f450d92a3
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/Game(MainMap).unity
+    guid: 6cf4d0c174ef8fb42bc7b809f04b18c7
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/Village.unity
+    guid: af493b9dd28f7cd4592a8a683636c847
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

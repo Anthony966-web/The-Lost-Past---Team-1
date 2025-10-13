@@ -13,7 +13,7 @@ public class Interact : MonoBehaviour
             return;
 
 
-        RaycastHit2D hit = Physics2D.BoxCast(transform.position, new Vector2(1.5f, 1.5f), 0, Vector2.zero, 0, boxLayer);
+        RaycastHit2D hit = Physics2D.BoxCast(transform.position, boxSize, 0, Vector2.zero, 0, boxLayer);
 
         if (hit && hit.collider.TryGetComponent(out Interactable interactable))
         {
