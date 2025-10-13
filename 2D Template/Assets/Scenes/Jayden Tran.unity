@@ -1035,6 +1035,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   GoblinHealth: {fileID: 0}
+  attackDamage: 1
   damage: 1
   AttackHitbox: {fileID: 0}
 --- !u!1 &519420028
@@ -3312,8 +3313,8 @@ MonoBehaviour:
     m_ActionName: 'Player/Look[/Mouse/delta,/Pen/delta]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2111556510}
-        m_TargetAssemblyTypeName: AttackHitbox, Assembly-CSharp
+      - m_Target: {fileID: 1862698658}
+        m_TargetAssemblyTypeName: PlayerNormalAttack, Assembly-CSharp
         m_MethodName: Attack
         m_Mode: 0
         m_Arguments:
@@ -3447,6 +3448,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   GoblinHealth: {fileID: 163043895}
+  attackDamage: 1
   damage: 1
   AttackHitbox: {fileID: 2111556507}
 --- !u!61 &1862698659
@@ -4037,11 +4039,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faca47c616a476a4e97fa14a49414aca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AttackCollider: {fileID: 2111556508}
-  attackDamage: 1
-  faceRight: {x: 1, y: -0.9, z: 0}
-  faceLeft: {x: -1, y: -0.9, z: 0}
-  justAttcked: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
