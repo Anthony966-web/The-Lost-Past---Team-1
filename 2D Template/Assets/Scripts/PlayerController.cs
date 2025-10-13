@@ -45,18 +45,7 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("Horizontal", _movement.x);
         anim.SetFloat("Vertical", _movement.y);
 
-        //if (_movement.x < 0)
-        //{
-        //    // Left
-        //    GFX.GetComponent<SpriteRenderer>().flipX = false;
-            
-        //}
-        //else if (_movement.x > 0)
-        //{
-        //    // Right
-        //    GFX.GetComponent<SpriteRenderer>().flipX = true;
-            
-        //}
+        
     }
 
     public void Move(InputAction.CallbackContext ctx)
@@ -127,14 +116,7 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log($"Splash hit: {enemyCol.name}");
 
-            // Apply damage if they have a health script
-            //EnemyHealth2D enemy = enemyCol.GetComponent<EnemyHealth2D>();
-            //if (enemy != null)
-            //{
-            //    enemy.TakeDamage(damage);
-            //}
-
-            enemyCol.GetComponent<Goblin>().OnHit(damage);
+            enemyCol.GetComponent<EnemyHealth>().OnHit(damage);
         }
     }
 

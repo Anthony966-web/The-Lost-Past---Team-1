@@ -6,7 +6,7 @@ TagManager:
   tags:
   - Player_
   - Enemy_
-  - Goblin_
+  - Attack
   layers:
   - Default
   - TransparentFX
@@ -16,7 +16,7 @@ TagManager:
   - UI
   - Interactable
   - Obstacle
-  - 
+  - Attack
   - 
   - 
   - 

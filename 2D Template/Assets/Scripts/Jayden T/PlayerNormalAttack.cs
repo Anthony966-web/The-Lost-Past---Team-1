@@ -9,12 +9,12 @@ public class PlayerNormalAttack : MonoBehaviour
 {
     [SerializeField] public float attackRange = 1.5f;
     [SerializeField] public LayerMask attackLayer;
-    public Transform GoblinHealth;
-    public float attackDamage = 1f;
+    public Transform EnemyHealth;
+    
 
     public float damage = 1f;
     public GameObject AttackHitbox;
-    Collider2D AttackCollider;
+    
 
     private PlayerController topDown;
 
@@ -23,7 +23,7 @@ public class PlayerNormalAttack : MonoBehaviour
     {
         topDown = GetComponent<PlayerController>();
         print(topDown);
-        AttackCollider = AttackHitbox.GetComponent<Collider2D>();
+        
     }
 
     
@@ -44,27 +44,14 @@ public class PlayerNormalAttack : MonoBehaviour
             if (Onhit.collider != null)
             {
                 UnityEngine.Debug.Log("Hit " + Onhit.collider.name);
-
-                if (Onhit.collider.gameObject.CompareTag("Enemy_"))
-                {
-                    GoblinHealth = Onhit.collider.transform;
-                    GoblinHealth goblinHealth = GoblinHealth.GetComponent<GoblinHealth>();
-                    
-
-                }
+                EnemyHealth = Onhit.collider.transform;
+                EnemyHealth enemyHealth = EnemyHealth.GetComponent<EnemyHealth>();
+                EnemyHealth.SendMessage("OnHit", damage);
             }
-        }
 
-        if (ctx.performed)
-        {
-            AttackCollider.enabled = true;
-
-
+            
         }
-        else
-        {
-            AttackCollider.enabled = false;
-        }
+        
     }
 
 
