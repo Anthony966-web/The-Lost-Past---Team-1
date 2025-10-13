@@ -9,7 +9,7 @@ public class PlayerNormalAttack : MonoBehaviour
 {
     [SerializeField] public float attackRange = 1.5f;
     [SerializeField] public LayerMask attackLayer;
-    public Transform GoblinHealth;
+    public Transform EnemyHealth;
     public float attackDamage = 1f;
 
     public float damage = 1f;
@@ -47,8 +47,8 @@ public class PlayerNormalAttack : MonoBehaviour
 
                 if (Onhit.collider.gameObject.CompareTag("Enemy_"))
                 {
-                    GoblinHealth = Onhit.collider.transform;
-                    GoblinHealth goblinHealth = GoblinHealth.GetComponent<GoblinHealth>();
+                    EnemyHealth = Onhit.collider.transform;
+                    EnemyHealth goblinHealth = EnemyHealth.GetComponent<EnemyHealth>();
                     
 
                 }
