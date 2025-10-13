@@ -209,6 +209,7 @@ GameObject:
   - component: {fileID: 368167315}
   - component: {fileID: 368167314}
   - component: {fileID: 368167313}
+  - component: {fileID: 368167316}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -279,7 +280,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 368167314}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 368167316}
+        m_TargetAssemblyTypeName: QuitGame, Assembly-CSharp
+        m_MethodName: QuittheGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &368167314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,7 +306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8018868, g: 0.8018868, b: 0.8018868, a: 1}
+  m_Color: {r: 0.9433962, g: 0.93894625, b: 0.93894625, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -318,6 +331,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 368167311}
   m_CullTransparentMesh: 1
+--- !u!114 &368167316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368167311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9febb8d979df9b849a23a877eb241f5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &508564450
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,6 +784,7 @@ GameObject:
   - component: {fileID: 715392600}
   - component: {fileID: 715392599}
   - component: {fileID: 715392598}
+  - component: {fileID: 715392601}
   m_Layer: 5
   m_Name: Start
   m_TagString: Untagged
@@ -783,8 +809,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 959.9998, y: -687.1859}
-  m_SizeDelta: {x: 214.3282, y: 106.742}
+  m_AnchoredPosition: {x: 959.9998, y: -696.2411}
+  m_SizeDelta: {x: 214.3282, y: 124.9429}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &715392598
 MonoBehaviour:
@@ -829,7 +855,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 715392599}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 715392601}
+        m_TargetAssemblyTypeName: PlayGm, Assembly-CSharp
+        m_MethodName: PlayGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &715392599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -843,15 +881,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.22339618, g: 0.6981132, b: 0, a: 1}
+  m_Color: {r: 0.8396226, g: 0.8356621, b: 0.8356621, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 4879562169383333353, guid: fa845d2a3be96e34d8eeb56b8cbc7996, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -868,6 +906,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 715392596}
   m_CullTransparentMesh: 1
+--- !u!114 &715392601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715392596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c545e24bac778747850d28412bde0a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &773819169
 GameObject:
   m_ObjectHideFlags: 0

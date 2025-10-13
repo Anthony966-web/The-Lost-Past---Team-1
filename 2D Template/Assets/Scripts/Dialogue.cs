@@ -50,7 +50,7 @@ public class Dialogue : MonoBehaviour
         StartCoroutine(TypeLine());
         gameObject.SetActive(true);
         canMove.enabled = false;
-        rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
+        rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
         an.enabled = false;
     }
 

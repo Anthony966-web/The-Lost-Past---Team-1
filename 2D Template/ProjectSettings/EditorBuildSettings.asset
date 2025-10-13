@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Talon Hobbs.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/Scenes/GameScenes/MainMenu.unity
+    guid: b3113164d2cbd6d4ca927dbc3003fd91
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/Cave.unity
+    guid: 38c1e70d2ee9b4e4caef068f450d92a3
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
