@@ -1,4 +1,6 @@
-﻿using Unity.VisualScripting;
+﻿using System;
+using Unity.VisualScripting;
+using UnityEditor.Rendering.LookDev;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,6 +12,7 @@ public class PlayerController : MonoBehaviour
     private float movementSpeed;
     public float speedMultiplier;
     public float baseMoveSpeed;
+    public bool canceled;
 
     public Rigidbody2D rb2D;
     [HideInInspector] public Vector2 direction;
@@ -50,11 +53,25 @@ public class PlayerController : MonoBehaviour
 
     public void Move(InputAction.CallbackContext ctx)
     {
+        anim.SetBool("isWalking", true);
         _movement = ctx.ReadValue<Vector2>();
 
         if (ctx.ReadValue<Vector2>() != Vector2.zero)
         {
             direction = ctx.ReadValue<Vector2>();
+        }
+
+        canceled = ctx.canceled;
+
+        if (canceled == false)
+        {
+            anim.SetFloat("LastInputX", _movement.x);
+            anim.SetFloat("LastInputY", _movement.y);
+        }
+        else
+        {
+            anim.SetBool("isWalking", false);
+
         }
     }
 
@@ -67,6 +84,8 @@ public class PlayerController : MonoBehaviour
     public void Attack(InputAction.CallbackContext ctx)
     {
         if (!ctx.performed) return;
+
+        anim.SetTrigger("Attack");
 
         if (cam == null)
         {
