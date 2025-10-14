@@ -18,7 +18,7 @@ public class Dialogue : MonoBehaviour
     private PlayerController canMove;
     private Rigidbody2D rb;
     private Animator an;
-    public Interact Move;
+    public bool isOpened = false;
     
     private int index;
 
@@ -34,6 +34,7 @@ public class Dialogue : MonoBehaviour
         canMove = GameObject.Find("Player").GetComponent<PlayerController>();
         rb = GameObject.Find("Player").GetComponent<Rigidbody2D>();
         an = GameObject.Find("GFX").GetComponent<Animator>();
+        Interact interact = GetComponent<Interact>();
 
     }
 
@@ -46,6 +47,11 @@ public class Dialogue : MonoBehaviour
     }
     public void OpenDialogue()
     {
+        if (isOpened)
+        {
+            return;
+        }
+        isOpened = true;
         StopAllCoroutines();
         index = 0;
         textComponent.text = lines[index];
@@ -88,7 +94,7 @@ public class Dialogue : MonoBehaviour
                 canMove.enabled = true;
                 rb.constraints = RigidbodyConstraints2D.None | RigidbodyConstraints2D.FreezeRotation;
                 an.enabled = true;
-
+                isOpened = false;
             }
         }
         else
