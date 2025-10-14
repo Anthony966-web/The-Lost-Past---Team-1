@@ -2,15 +2,16 @@ using UnityEngine;
 
 public class SpriteChanger : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private SpriteRenderer Spite;
+
+    void Awake()
     {
-        
+        Spite = GameObject.Find("GNX").GetComponent<SpriteRenderer>();
+        GameObject.Find("Cloth overworld_0");
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Clothed()
     {
-        
+        Spite.sprite = Resources.Load<Sprite>("Golem-Cloth_1");
     }
 }
