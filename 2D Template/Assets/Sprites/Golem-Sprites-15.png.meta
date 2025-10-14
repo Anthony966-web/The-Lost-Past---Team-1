@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f78601a9341cb4a40af80b5211d966d1
+guid: 9e6b04426ac34954fb6841a32cdac5a6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2887393811725299369
-    second: Old Man_0
+      213: 7729944536222406343
+    second: Golem-Sprites-15_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Old Man_0
+      name: Golem-Sprites-15_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 3
+        x: 9
+        y: 0
         width: 15
-        height: 27
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9ae2c8aaf55121820800000000000000
-      internalID: 2887393811725299369
+      spriteID: 7c61207c997464b60800000000000000
+      internalID: 7729944536222406343
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Old Man_0: 2887393811725299369
+      Golem-Sprites-15_0: 7729944536222406343
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
