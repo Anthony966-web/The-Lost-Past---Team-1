@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: c065385f71c0f0a47bf03da7a8d09069
+guid: 6c04e59d490a99b4d9ecfb0a82dac181
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5380962318219982264
-    second: Golem-Sprites-1-Sheet-export_0
-  - first:
-      213: 8645321691491037935
-    second: Golem-Sprites-1-Sheet-export_1
-  - first:
-      213: -7164472336087469375
-    second: Golem-Sprites-1-Sheet-export_2
-  - first:
-      213: -1210768956738979189
-    second: Golem-Sprites-1-Sheet-export_3
-  - first:
-      213: 2477004058770548945
-    second: Golem-Sprites-1-Sheet-export_4
+      213: -7443450985947579738
+    second: Cave TileMap-1.png_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -138,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Golem-Sprites-1-Sheet-export_0
+      name: Cave TileMap-1.png_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
-        width: 32
-        height: 32
+        x: 48
+        y: 80
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,108 +141,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 84a4cb8f74bf255b0800000000000000
-      internalID: -5380962318219982264
+      spriteID: 6aa309fe3cc83b890800000000000000
+      internalID: -7443450985947579738
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Golem-Sprites-1-Sheet-export_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fe27d46064a5af770800000000000000
-      internalID: 8645321691491037935
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Golem-Sprites-1-Sheet-export_2
+      name: Cave TileMap-1.png_1
       rect:
         serializedVersion: 2
         x: 64
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1c2b46c8e5ea29c90800000000000000
-      internalID: -7164472336087469375
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Golem-Sprites-1-Sheet-export_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b8ab08c7c0c723fe0800000000000000
-      internalID: -1210768956738979189
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Golem-Sprites-1-Sheet-export_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1d828365116106220800000000000000
-      internalID: 2477004058770548945
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Golem-Sprites-1-Sheet-export_5
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 96
-        width: 32
-        height: 32
+        y: 80
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e531b84915250a6458a1ab8a9d7328b0
-      internalID: -211809265
+      spriteID: a2751f9a962aa3a4e8daaa0708f7034b
+      internalID: 1625586125
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Golem-Sprites-1-Sheet-export_6
+      name: Cave TileMap-1.png_2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 32
+        x: 80
+        y: 80
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -285,86 +185,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b823f2a89bfc0b46bfc0be219099571
-      internalID: -628210065
+      spriteID: bf659ea1618a68a40abfcd39b21e6180
+      internalID: -35380710
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Golem-Sprites-1-Sheet-export_7
+      name: Cave TileMap-1.png_3
       rect:
         serializedVersion: 2
-        x: 64
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ab8eacf5c89a0094ca3aff15ca9a09f5
-      internalID: -1776825746
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Golem-Sprites-1-Sheet-export_8
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1720eac79c459a541bc758c665263ce9
-      internalID: -1395691769
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Golem-Sprites-1-Sheet-export_9
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f374bab732bb9ef42ace702a109b119e
-      internalID: -798905269
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Golem-Sprites-1-Sheet-export_10
-      rect:
-        serializedVersion: 2
-        x: 0
+        x: 48
         y: 64
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,42 +207,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1e04e6ea0b6de3428d944f987796733
-      internalID: -1881896625
+      spriteID: cf6b633b62b6a5341b77c5a068231f98
+      internalID: -453066703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Golem-Sprites-1-Sheet-export_11
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c2436a58f4b727849b8b050bd8bf97ec
-      internalID: -1785580133
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Golem-Sprites-1-Sheet-export_12
+      name: Cave TileMap-1.png_4
       rect:
         serializedVersion: 2
         x: 64
         y: 64
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -417,20 +229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2de28d3ce2febbf488af11ea86ca7e71
-      internalID: -2062896284
+      spriteID: da5bb6acdce3f5b4181029b2122633d0
+      internalID: 377028112
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Golem-Sprites-1-Sheet-export_13
+      name: Cave TileMap-1.png_5
       rect:
         serializedVersion: 2
-        x: 96
+        x: 80
         y: 64
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -439,20 +251,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 548992ab96b9a2045a676b2bc4bdcc25
-      internalID: 1616767429
+      spriteID: adec3f85e0caf7d459951dac1571e348
+      internalID: 1343727476
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Golem-Sprites-1-Sheet-export_14
+      name: Cave TileMap-1.png_6
       rect:
         serializedVersion: 2
-        x: 128
-        y: 64
-        width: 32
-        height: 32
+        x: 0
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -461,20 +273,130 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a403199d82ef3f46a51d725854119af
-      internalID: 2097842683
+      spriteID: b2709be105726e44ea2411033c69df78
+      internalID: 743874426
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Golem-Sprites-1-Sheet-export_15
+      name: Cave TileMap-1.png_7
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daf1dbbfc9b11814ba8f19ee6b2d1a62
+      internalID: -112360700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave TileMap-1.png_8
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8e906eb601222b46a6f7c99c02d5a72
+      internalID: -1091406021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave TileMap-1.png_9
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fa012fc41f673442b377200a9908350
+      internalID: -1923918210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave TileMap-1.png_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 898c6540c89fa164e82ff8052aab9dd2
+      internalID: 336509824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave TileMap-1.png_11
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d78f16af9b621943aca2a513d5fe6f2
+      internalID: -530178962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave TileMap-1.png_12
       rect:
         serializedVersion: 2
         x: 0
         y: 32
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -483,20 +405,42 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0ed2ec7d92327e458b77b9166d06a28
-      internalID: 1066738433
+      spriteID: 65cfa785a6b43e946be354ffb351394a
+      internalID: 1039536849
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Golem-Sprites-1-Sheet-export_16
+      name: Cave TileMap-1.png_13
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bff05c20bfb31d24db09cd1af65ee91d
+      internalID: -195958182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave TileMap-1.png_14
       rect:
         serializedVersion: 2
         x: 32
         y: 32
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -505,20 +449,42 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b0120656dccb3e4fada9e9aff0847d6
-      internalID: 798486951
+      spriteID: cfe0aef6b76f5f646a92c12e056187cd
+      internalID: -443638951
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Golem-Sprites-1-Sheet-export_17
+      name: Cave TileMap-1.png_15
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa7cdbd1c149074b93aa2dd7d1f3e24
+      internalID: 1061330343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave TileMap-1.png_16
       rect:
         serializedVersion: 2
         x: 64
         y: 32
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -527,20 +493,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d684e0e1b9071d4393864fcb56940d9
-      internalID: 1006203901
+      spriteID: 00712851122fa674f9a4e57501cf2464
+      internalID: 547496474
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Golem-Sprites-1-Sheet-export_18
+      name: Cave TileMap-1.png_17
       rect:
         serializedVersion: 2
-        x: 96
+        x: 80
         y: 32
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -549,20 +515,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c107c1dde54c344a9cedf89acde1338
-      internalID: -1096004331
+      spriteID: 43baafc70b2e21542b88b13d248dbffc
+      internalID: 594227836
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Golem-Sprites-1-Sheet-export_19
+      name: Cave TileMap-1.png_18
       rect:
         serializedVersion: 2
-        x: 128
-        y: 32
-        width: 32
-        height: 32
+        x: 0
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -571,20 +537,130 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 825a024f8564a0e4ba3c5614ec5a389f
-      internalID: -954212815
+      spriteID: dd78e5b926ae7774ba8a2fec6ca7bb87
+      internalID: 1510086754
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Golem-Sprites-1-Sheet-export_20
+      name: Cave TileMap-1.png_19
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: debb97770690d3648afcd3c5334375c7
+      internalID: -1652046998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave TileMap-1.png_20
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da0326d4fa281c040bbab9c2dc369e91
+      internalID: -749176757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave TileMap-1.png_21
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0caaac8e86887df449ae33ed4a9fae24
+      internalID: -1656667704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave TileMap-1.png_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b82a2e1867d36c449fbe91b5bcaa31a
+      internalID: 1389272206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave TileMap-1.png_23
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9254532b0b646a4896804857518bac8
+      internalID: 1974942587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave TileMap-1.png_24
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -593,20 +669,42 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98568b55c3fcaf742b27115a3c5019e1
-      internalID: -2026198120
+      spriteID: 450053548864f1846be95317a3238050
+      internalID: 1980855000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Golem-Sprites-1-Sheet-export_21
+      name: Cave TileMap-1.png_25
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f14b5b4556e962f4786c46f70070c818
+      internalID: 193193637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave TileMap-1.png_26
       rect:
         serializedVersion: 2
         x: 32
         y: 0
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -615,52 +713,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ded6fb59479247344bc851e70f5c2f3c
-      internalID: -1796849287
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Golem-Sprites-1-Sheet-export_22
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 005fd98605d2add498405126bc78a648
-      internalID: -421843314
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Golem-Sprites-1-Sheet-export_23
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 48668e15ab2a92c4db0cc29f67504c7d
-      internalID: -1506377863
+      spriteID: d74dc121c56721741a1dcccb8191a04d
+      internalID: -1022941576
       vertices: []
       indices: 
       edges: []
@@ -669,7 +723,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 15a6d3dcc16d86f45a0ff7678ed52cb5
+    spriteID: 8514f12f08868f74892dbef25d7bbe11
     internalID: 0
     vertices: []
     indices: 
@@ -679,30 +733,33 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Golem-Sprites-1-Sheet-export_0: -5380962318219982264
-      Golem-Sprites-1-Sheet-export_1: 8645321691491037935
-      Golem-Sprites-1-Sheet-export_10: -1881896625
-      Golem-Sprites-1-Sheet-export_11: -1785580133
-      Golem-Sprites-1-Sheet-export_12: -2062896284
-      Golem-Sprites-1-Sheet-export_13: 1616767429
-      Golem-Sprites-1-Sheet-export_14: 2097842683
-      Golem-Sprites-1-Sheet-export_15: 1066738433
-      Golem-Sprites-1-Sheet-export_16: 798486951
-      Golem-Sprites-1-Sheet-export_17: 1006203901
-      Golem-Sprites-1-Sheet-export_18: -1096004331
-      Golem-Sprites-1-Sheet-export_19: -954212815
-      Golem-Sprites-1-Sheet-export_2: -7164472336087469375
-      Golem-Sprites-1-Sheet-export_20: -2026198120
-      Golem-Sprites-1-Sheet-export_21: -1796849287
-      Golem-Sprites-1-Sheet-export_22: -421843314
-      Golem-Sprites-1-Sheet-export_23: -1506377863
-      Golem-Sprites-1-Sheet-export_3: -1210768956738979189
-      Golem-Sprites-1-Sheet-export_4: 2477004058770548945
-      Golem-Sprites-1-Sheet-export_5: -211809265
-      Golem-Sprites-1-Sheet-export_6: -628210065
-      Golem-Sprites-1-Sheet-export_7: -1776825746
-      Golem-Sprites-1-Sheet-export_8: -1395691769
-      Golem-Sprites-1-Sheet-export_9: -798905269
+      Cave TileMap-1.png_0: -7443450985947579738
+      Cave TileMap-1.png_1: 1625586125
+      Cave TileMap-1.png_10: 336509824
+      Cave TileMap-1.png_11: -530178962
+      Cave TileMap-1.png_12: 1039536849
+      Cave TileMap-1.png_13: -195958182
+      Cave TileMap-1.png_14: -443638951
+      Cave TileMap-1.png_15: 1061330343
+      Cave TileMap-1.png_16: 547496474
+      Cave TileMap-1.png_17: 594227836
+      Cave TileMap-1.png_18: 1510086754
+      Cave TileMap-1.png_19: -1652046998
+      Cave TileMap-1.png_2: -35380710
+      Cave TileMap-1.png_20: -749176757
+      Cave TileMap-1.png_21: -1656667704
+      Cave TileMap-1.png_22: 1389272206
+      Cave TileMap-1.png_23: 1974942587
+      Cave TileMap-1.png_24: 1980855000
+      Cave TileMap-1.png_25: 193193637
+      Cave TileMap-1.png_26: -1022941576
+      Cave TileMap-1.png_3: -453066703
+      Cave TileMap-1.png_4: 377028112
+      Cave TileMap-1.png_5: 1343727476
+      Cave TileMap-1.png_6: 743874426
+      Cave TileMap-1.png_7: -112360700
+      Cave TileMap-1.png_8: -1091406021
+      Cave TileMap-1.png_9: -1923918210
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
