@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEditor.Rendering.LookDev;
 using UnityEngine;
@@ -85,7 +86,7 @@ public class PlayerController : MonoBehaviour
     {
         if (!ctx.performed) return;
 
-        anim.SetTrigger("Attack");
+        anim.SetBool("Attack", true);
 
         if (cam == null)
         {
@@ -137,6 +138,13 @@ public class PlayerController : MonoBehaviour
 
             enemyCol.GetComponent<EnemyHealth>().OnHit(damage);
         }
+        StartCoroutine(ResetAttack());
+    }
+
+    public IEnumerator ResetAttack()
+    {
+        yield return new WaitForSeconds(0.3f);
+        anim.SetBool("Attack", false);
     }
 
     // helper for visualizing radius
