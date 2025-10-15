@@ -8,6 +8,23 @@ public class SpriteChanger : MonoBehaviour
 
     public Sprite CS;
 
+    public Item[] itemsToPickup;
+
+    public InventoryManager inventoryManager;
+
+    public void PickupItem(int id)
+    {
+        bool result = inventoryManager.AddItem(itemsToPickup[id]);
+        if (result == true)
+        {
+            Debug.Log("Item Added");
+        }
+        else
+        {
+            Debug.Log("Item Not Added");
+        }
+    }
+
     void Awake()
     {
         Spite = GameObject.Find("GNX").GetComponent<SpriteRenderer>();
