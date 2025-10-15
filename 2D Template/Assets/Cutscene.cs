@@ -1,15 +1,12 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class Cutscene : MonoBehaviour
 {
-    public Animation recorded;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        wizard = gameObject.GetComponent<Wizard>();
-    }
+    public GameObject Wizard_0;
 
+    
     // Update is called once per frame
     void Update()
     {
@@ -19,7 +16,7 @@ public class Cutscene : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            recorded.Play();
+            Wizard_0.GetComponent<PlayableDirector>().Play();
         }
     }
 }
