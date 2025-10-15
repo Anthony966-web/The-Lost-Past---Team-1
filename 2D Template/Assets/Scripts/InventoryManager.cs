@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using static UnityEditor.Progress;
 
@@ -16,6 +17,8 @@ public class InventoryManager : MonoBehaviour
     public GameObject inventoryItemPrefab;
 
     [HideInInspector] public int selectedSlot = -1;
+
+    public Transform player;
 
     private float zero = 0;
     private float one = 0;
@@ -100,10 +103,26 @@ public class InventoryManager : MonoBehaviour
         {
             InventorySlots[selectedSlot].Deselect();
             selectedSlot = -1;
+            Destroy(player.GetChild(1).gameObject);
             return;
         }
         InventorySlots[newValue].Select();
         selectedSlot = newValue;
+
+        Equip();
+    }
+
+    public void Equip()
+    {
+        if(player.childCount > 1)
+        {
+            Destroy(player.GetChild(1).gameObject);
+            return;
+        }
+        Item item = GetSelectedItem(false);
+        GameObject itemObject = Instantiate(item.itemObject, player.transform);
+        itemObject.transform.parent = player;
+        itemObject.transform.position = player.position;
     }
 
     public bool AddItem(Item item)
@@ -160,6 +179,7 @@ public class InventoryManager : MonoBehaviour
                     itemInSlot.RefreshCount();
                 }
             }
+            print(item);
             return item;
         }
 

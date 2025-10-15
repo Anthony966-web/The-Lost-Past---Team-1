@@ -20,4 +20,5 @@ MonoBehaviour:
   healthBoost: 0
   speedBoost: 0.25
   stackable: 0
-  image: {fileID: 21300000, guid: 4683e64797a364ad1adde74cc69b1ec9, type: 3}
+  image: {fileID: -7775649970217235406, guid: a235aa0e523463249898f6a6532ec362, type: 3}
+  itemObject: {fileID: 3749320349364730656, guid: 3b0e25bd99386364780aeb1c476d5cd6, type: 3}

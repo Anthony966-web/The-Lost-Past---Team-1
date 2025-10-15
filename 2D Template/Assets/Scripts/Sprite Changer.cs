@@ -27,15 +27,16 @@ public class SpriteChanger : MonoBehaviour
 
     void Awake()
     {
-        Spite = GameObject.Find("GNX").GetComponent<SpriteRenderer>();
-        GameObject.Find("Cloth overworld_0");
-        COV = GameObject.Find("ClothOverWorld");
+        inventoryManager = FindFirstObjectByType<InventoryManager>();
+
+        Spite = GetComponent<SpriteRenderer>();
+        COV = gameObject;
         CS = Resources.Load<Sprite>("Golem-Cloth_1");
     }
 
     public void Clothed()
     {
         Spite.sprite = CS;
-        COV.SetActive(false);
+        COV.SetActive(true);
     }
 }
