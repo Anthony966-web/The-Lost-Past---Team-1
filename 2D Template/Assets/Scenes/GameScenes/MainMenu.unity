@@ -1020,6 +1020,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 299fc2fbdaac14e47bf083ae8bb26e48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SceneName: Cave
+  sameScene: 0
+  player: {fileID: 0}
+  tpPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1372939414
 GameObject:
   m_ObjectHideFlags: 0

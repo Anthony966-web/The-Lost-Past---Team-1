@@ -1,9 +1,5 @@
-using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 
 public class PlayerNormalAttack : MonoBehaviour
 {

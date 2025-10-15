@@ -1,10 +1,8 @@
 using System;
-using UnityEditor.Tilemaps;
 using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    //  https://www.youtube.com/watch?v=IEadGWvewsA
 
     public float speed;
     public float chaseRange = 5f;

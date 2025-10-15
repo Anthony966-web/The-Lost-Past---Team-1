@@ -34,6 +34,15 @@ public class SpriteChanger : MonoBehaviour
         CS = Resources.Load<Sprite>("Golem-Cloth_1");
     }
 
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.CompareTag("Player"))
+        {
+            PickupItem(0);
+            Destroy(this.gameObject);
+        }
+    }
+
     public void Clothed()
     {
         Spite.sprite = CS;

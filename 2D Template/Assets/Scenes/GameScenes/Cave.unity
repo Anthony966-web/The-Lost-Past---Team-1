@@ -518,38 +518,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2255264822839121105, guid: 5ce4c81e524ccb74793825c16fb2da6b, type: 3}
-      propertyPath: m_Size.x
-      value: 0.07013539
-      objectReference: {fileID: 0}
-    - target: {fileID: 2255264822839121105, guid: 5ce4c81e524ccb74793825c16fb2da6b, type: 3}
-      propertyPath: m_Size.y
-      value: 0.11924301
-      objectReference: {fileID: 0}
-    - target: {fileID: 2255264822839121105, guid: 5ce4c81e524ccb74793825c16fb2da6b, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.0034069456
-      objectReference: {fileID: 0}
-    - target: {fileID: 2255264822839121105, guid: 5ce4c81e524ccb74793825c16fb2da6b, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.00047834963
-      objectReference: {fileID: 0}
     - target: {fileID: 5527296157087676506, guid: 5ce4c81e524ccb74793825c16fb2da6b, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 7351949736573666391, guid: 5ce4c81e524ccb74793825c16fb2da6b, type: 3}
-      propertyPath: m_Size.x
-      value: 0.32
-      objectReference: {fileID: 0}
-    - target: {fileID: 7351949736573666391, guid: 5ce4c81e524ccb74793825c16fb2da6b, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -798905269, guid: c065385f71c0f0a47bf03da7a8d09069, type: 3}
-    - target: {fileID: 7351949736573666391, guid: 5ce4c81e524ccb74793825c16fb2da6b, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
+      objectReference: {fileID: -6465827974249794538, guid: 6a266e1220134b8478fa6c092fbbc208, type: 3}
     - target: {fileID: 9172913821156609630, guid: 5ce4c81e524ccb74793825c16fb2da6b, type: 3}
       propertyPath: cam
       value: 
@@ -20185,7 +20161,7 @@ Transform:
   m_GameObject: {fileID: 1794757762}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.41930118, y: -1.0822569, z: 0}
+  m_LocalPosition: {x: -0.574, y: -1.0822569, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20204,7 +20180,7 @@ GameObject:
   - component: {fileID: 1801553586}
   - component: {fileID: 1801553585}
   m_Layer: 0
-  m_Name: Forest Trigger
+  m_Name: Main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20222,7 +20198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 299fc2fbdaac14e47bf083ae8bb26e48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: Forest
+  SceneName: Village
 --- !u!61 &1801553586
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20333,7 +20309,7 @@ Transform:
   m_GameObject: {fileID: 1801553584}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.3431, y: -1.2972, z: 0}
+  m_LocalPosition: {x: -0.387, y: -1.258, z: 0}
   m_LocalScale: {x: 0.39809066, y: 0.28328633, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
