@@ -77,12 +77,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -1429175929853391419, guid: 0c8da9d94d024824fa3459fe292213f8, type: 3}
+  m_Sprite: {fileID: -798905269, guid: c065385f71c0f0a47bf03da7a8d09069, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.26, y: 0.32}
+  m_Size: {x: 0.32, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -162,6 +162,7 @@ MonoBehaviour:
   _movement: {x: 0, y: 0}
   speedMultiplier: 0
   baseMoveSpeed: 0.8
+  canceled: 0
   rb2D: {fileID: 0}
   direction: {x: 0, y: 0}
   GFX: {fileID: 0}
@@ -310,6 +311,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a4f56d82-a783-4c81-bfc1-a79048786b66
+    m_ActionName: 'Player/Boulder Throw[/Keyboard/k]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
