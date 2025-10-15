@@ -3699,10 +3699,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3911352545082048566, guid: e78672bef4c487d47ac8df75a4b3a95c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1058344589}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e78672bef4c487d47ac8df75a4b3a95c, type: 3}
 --- !u!1 &905577316
 GameObject:
@@ -27085,23 +27082,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1058344583 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3911352545082048566, guid: e78672bef4c487d47ac8df75a4b3a95c, type: 3}
-  m_PrefabInstance: {fileID: 786700547}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1058344589
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1058344583}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20c4806d64da9c443a8cb81d8fa78fff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1082366796
 GameObject:
   m_ObjectHideFlags: 0
@@ -27954,7 +27934,7 @@ MonoBehaviour:
   onEnter:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1058344589}
+      - m_Target: {fileID: 2024900248}
         m_TargetAssemblyTypeName: SpriteChanger, Assembly-CSharp
         m_MethodName: Clothed
         m_Mode: 1
@@ -29070,6 +29050,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23090b359033e464781c46ce5c959981, type: 3}
+--- !u!212 &2014909326 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7351949736573666391, guid: 5ce4c81e524ccb74793825c16fb2da6b, type: 3}
+  m_PrefabInstance: {fileID: 191582493}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2024900245
 GameObject:
   m_ObjectHideFlags: 0
@@ -29080,8 +29065,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2024900247}
   - component: {fileID: 2024900246}
+  - component: {fileID: 2024900248}
   m_Layer: 0
-  m_Name: Cloth overworld_0
+  m_Name: ClothOverWorld
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29157,6 +29143,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2024900248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024900245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20c4806d64da9c443a8cb81d8fa78fff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Spite: {fileID: 2014909326}
+  COV: {fileID: 2024900245}
+  CS: {fileID: -5043405350553986615, guid: ea4465a6dbd9ff64597d177c81a0692e, type: 3}
 --- !u!1 &2105105530
 GameObject:
   m_ObjectHideFlags: 0
