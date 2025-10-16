@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections;
-using Unity.VisualScripting;
-using UnityEditor.Rendering.LookDev;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -24,11 +22,11 @@ public class PlayerController : MonoBehaviour
     [Header("Attack Settings")]
     public float damage = 25f;
     public float maxDistance = 100f;
-    public LayerMask enemyLayer; // assign “Enemy” layer in Inspector
-    public float splashRadius = 1.5f; // how far around the ray's hit point to also hit enemies
+    public LayerMask enemyLayer;
+    public float splashRadius = 1.5f;
 
     [Header("References")]
-    public Camera cam; // assign your camera in the inspector (e.g., MainCamera)
+    public Camera cam;
 
 
     private void Awake()
@@ -98,39 +96,30 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        // Get the mouse position in world space
         Vector2 mouseWorldPos = cam.ScreenToWorldPoint(Mouse.current.position.ReadValue());
 
-        // Direction from player to mouse
         Vector2 direction = (mouseWorldPos - (Vector2)transform.position).normalized;
 
-        // Visualize the ray
         Debug.DrawRay(transform.position, direction * maxDistance, Color.red, 1f);
 
-        // Cast ray
         RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, maxDistance, enemyLayer);
 
-        // Determine where to center the splash
         Vector2 splashCenter;
 
         if (hit.collider != null)
         {
-            // Hit something → splash centered on hit point
             splashCenter = hit.point;
             Debug.Log($"Direct hit on {hit.collider.name}!");
         }
         else
         {
-            // Missed → splash at max range in that direction
             splashCenter = (Vector2)transform.position + direction * maxDistance;
             Debug.Log("Missed direct hit, applying splash damage at end point.");
         }
 
-        // 🔸 Visualize splash radius
         Debug.DrawLine(transform.position, splashCenter, Color.yellow, 1f);
         DrawCircle(splashCenter, splashRadius, Color.cyan);
 
-        // Find all enemies in splash radius
         Collider2D[] enemies = Physics2D.OverlapCircleAll(splashCenter, splashRadius, enemyLayer);
         foreach (Collider2D enemyCol in enemies)
         {
@@ -147,7 +136,6 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("Attack", false);
     }
 
-    // helper for visualizing radius
     void DrawCircle(Vector2 center, float radius, Color color)
     {
         int segments = 32;
@@ -161,6 +149,4 @@ public class PlayerController : MonoBehaviour
             prevPoint = newPoint;
         }
     }
-
-
 }

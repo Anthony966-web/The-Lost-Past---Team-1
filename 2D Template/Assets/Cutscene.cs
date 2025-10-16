@@ -16,6 +16,8 @@ public class Cutscene : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            print("Playing");
+            Wizard_0.GetComponent<Animator>().SetBool("Collided", true);
             Wizard_0.GetComponent<PlayableDirector>().Play();
         }
     }
